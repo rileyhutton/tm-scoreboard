@@ -1,5 +1,5 @@
 html {
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/background.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -409,4 +409,8 @@ noscript h1 {
 	color: white;
 
 	cursor: pointer;
+}
+
+.seal {
+	filter: hue-rotate(270deg);
 }

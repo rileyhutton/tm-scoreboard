@@ -239,7 +239,7 @@
 	}
 
 	function showPlay() {
-		playButton.style.display = "block";
+		playButton.style.display = "none";
 	}
 
 	function play() {
@@ -296,10 +296,18 @@
 
 	playButton.addEventListener("mouseup", play);
 
-	for (var i = 0; i < 5; ++i)
-		addContestant();
+
+	addContestant("../images/contestant/alex.JPG");
+	addContestant("../images/contestant/jack.JPG");
+	addContestant("../images/contestant/jamie.JPG");
+	addContestant("../images/contestant/vic.JPG");
+	addContestant("../images/contestant/mark.JPG");
+	addContestant("../images/contestant/emma.JPG");
+
 
 	refreshContestants();
+
+	play();
 
 	function resize(rep) {
 		var w = window.innerWidth;
@@ -317,4 +325,11 @@
 
 	window.addEventListener("resize", resize);
 	resize();
+
+	window.addEventListener("keydown", function(evt) {
+		if (evt.key === "=") {
+			play();
+		}
+	});
+
 })();
