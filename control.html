@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TM Scoreboard Controller</title>
+        <link rel="stylesheet" type="text/css" href="css/control.css">
+    </head>
+    <body id="body">
+        <h1>Taskmaster Scoreboard Controller</h1>
+        <h3>Built by Riley Hutton, held together with tape and string :D</h3>
+
+        <div class="buttonContainer">
+            <button id="reset-button">RESET ALL</button>
+            <button id="play-button">PLAY CHANGES [P]</button>
+            <button id="reset-mod-button">RESET MOD</button>
+        </div>
+
+
+        <div class="playerCardContainer" id="playerCardContainer">
+
+          
+
+        </div>
+
+        <div class="heartratePanel">
+            <h2>Heartrate Control</h2>
+
+            <button id="displayhr-button">DISPLAY HR</button>
+
+            <div class="HRInfoDisplay">
+                <div class="valueHRContainer">
+                    <h4>Current HR</h4>
+                    <div class="HRValue" id="currentHR">0</div>
+                </div>
+
+                <div class="valueHRContainer">
+                    <h4>Max HR</h4>
+                    <div class="HRValue" id="maxHR">0</div>
+                </div>
+
+                <div class="valueHRContainer">
+                    <h4>Last Update</h4>
+                    <div class="HRValue" id="lastHR">0s Ago</div>
+                </div>
+            </div>
+
+            <div class="connectionControl" id="connectionControlBox">
+                <div class="readout" id="connectionReadout">DISCONNECTED</div>
+
+                <input type="text" id="heartrateSession-input" placeholder="SESSION ID" value="192.168.8.211"></input>
+
+                <button class="connectionButton" id="connect-button" style="background-color: rgb(116, 255, 116);">CONNECT</button>
+                <button class="connectionButton" id="disconnect-button" style="background-color: rgb(255, 88, 88);">DISCONNECT</button>
+            </div>
+
+            <div class="maxHRControl" id="maxHRControl">
+                <h5>MAX HR Recordings</h5>
+                <button class="connectionButton" id="beginMeasure-button" style="background-color: yellow;">BEGIN</button>
+                <button class="connectionButton" id="endMeasure-button" style="background-color: rgb(0, 174, 255);" disabled>END</button>
+                TARGET: <span id="selectedPerson" style="font-weight: bold;">None</span><br>
+                <div class="maxTimer"><span id="maxHRTime">0</span>s</div>
+                <div class="maxHRList" id="maxHRList"></div>
+                <button class="connectionButton" id="assignModsFromHR-button" style="width: 100%; background-color: rgb(255, 168, 251);">ASSIGN POINTS</button>
+                <button class="connectionButton" id="resetHRList-button" style="width: 100%; background-color: rgb(255, 168, 168);">RESET</button>
+                
+            </div>
+
+        </div>
+
+
+
+
+
+        <script src="js/control.js" type="text/javascript"></script>
+    </body>
+</html>

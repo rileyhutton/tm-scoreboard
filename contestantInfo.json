@@ -1,0 +1,22 @@
+{
+    "contestants" : [
+        {
+            "name" : "Anna",
+            "image" : "contestantImages/anna.jpeg"
+        },
+        {
+            "name" : "Jonas",
+            "image" : "contestantImages/jonas.jpeg"
+        },
+        {
+            "name" : "Lottie",
+            "image" : "contestantImages/lottie.jpeg"
+        },
+        {
+            "name" : "Michael",
+            "image" : "contestantImages/michael.jpeg"
+        }
+        
+    ]
+    
+}
