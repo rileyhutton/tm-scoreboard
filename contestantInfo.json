@@ -1,22 +1,24 @@
 {
     "contestants" : [
         {
-            "name" : "Anna",
-            "image" : "contestantImages/anna.jpeg"
+            "name" : "Ollie",
+            "image" : "contestantImages/ollie.jpeg"
         },
         {
-            "name" : "Jonas",
-            "image" : "contestantImages/jonas.jpeg"
+            "name" : "Will",
+            "image" : "contestantImages/will.jpeg"
         },
         {
-            "name" : "Lottie",
-            "image" : "contestantImages/lottie.jpeg"
+            "name" : "Carlos",
+            "image" : "contestantImages/carlos.jpeg"
         },
         {
-            "name" : "Michael",
-            "image" : "contestantImages/michael.jpeg"
+            "name" : "Elena",
+            "image" : "contestantImages/elena.jpeg"
+        },
+        {
+            "name" : "Olivia",
+            "image" : "contestantImages/olivia.jpeg"
         }
-        
     ]
-    
 }
